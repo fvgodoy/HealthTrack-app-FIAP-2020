@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Health Track - Pressão Arterial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS-HealthTrack.css">
+  </head>
+<body>
+  <div class="container-fluid">
+    
+    <div class="row" id="logo">
+      <header>
+        <div class = "btn-group">
+          <button type="button" class="btn btn-md dropdown-toggle" aria-label="Left Align" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menutopo">
+          <span class="glyphicon glyphicon-menu-hamburger glyphicon-align-left" id="menu"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="Health Track.Rev1 - Dashboard.html">Início</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="Health Track.Rev1 - Peso.html">Peso</a></li>
+            <li><a href="Health Track.Rev1 - Pressao Arterial.html">Pressão Arterial</a></li>
+            <li><a href="Health Track.Rev1 - Alimentos.html">Alimentos</a></li>
+            <li><a href="Health Track.Rev1 - Atividades Fisicas.html">Atividades Físicas</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="Health Track.Rev1 - MeusDados.html">Meus dados</a></li>
+            <li><a href="Health Track.Rev1 - INICIO.html">Sair</a></li>
+          </ul>
+        </div>
+        HEALTH TRACK
+       <p>Histórico de Pressão Arterial</p>
+       <img src="Health heart.png" class="img-fluid" alt="backlogo" id="backhearth">
+      </header>
+    </div>
+    
+    <section>
+      <div id="dados" class="container-fluid">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Data</th>
+              <th scope="col">Pressão (mmHg)</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>28/11/2019</td>
+              <td>130/80</td>
+              <td>
+                <button type="button" class="btn btn-default" aria-label="Left Align">
+                  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default" aria-label="Left Align">
+                  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                </button>
+              </td>
+
+            </tr>
+            <tr>
+              <td>28/12/2019</td>
+              <td>115/80</td>
+              <td>
+                <button type="button" class="btn btn-default" aria-label="Left Align">
+                  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default" aria-label="Left Align">
+                  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>28/01/2020</td>
+              <td>140/90</td>
+              <td>
+                <button type="button" class="btn btn-default" aria-label="Left Align">
+                  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="btn btn-default" aria-label="Left Align">
+                  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <div class="navbar"> 
+        <button type="button" class="btn btn-secundary" data-toggle="modal" data-target="#exampleModalCenter" id="botao">
+          <span class="glyphicon glyphicon-plus" aria-hidden="true" id="glymais"></span>Pressão Arterial
+        </button>
+        
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Adicionar Pressão Arterial</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-row">
+                      <div class="col">
+                        <input placeholder="Data" class="form-control textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                      </div>
+                      <div class="col">
+                        <input type="number" class="form-control" placeholder="Sistólica (mmHg)">
+                        <input type="number" class="form-control" placeholder="Diastólica (mmHg)">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" id="botao">Fechar</button>
+                  <button type="button" class="btn btn-secundary" id="botao">Salvar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="infos">
+          Outras Informações
+          </button>
+          <ul class="dropdown-menu">
+              <li><a href="Health Track.Rev1 - Peso.html">Peso</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="Health Track.Rev1 - Alimentos.html">Alimentos</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="Health Track.Rev1 - Atividades Fisicas.html">Atividade Física</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </footer>
+  </div>
+<!-- Scripts de Carregamento do JQuery e Bootstrap-->
+<script src="jquery/jquery-3.5.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
